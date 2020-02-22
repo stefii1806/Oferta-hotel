@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: url(pool-ext.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img {
+  width: 55%;
+}
+
+.container {
+  font-family: 'Open Sans';
+  background-color: rgba(39, 39, 46, 0.924);
+  color: #d7e9eb;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  line-height: 2;
+}
+
+#nombreHotel {
+  color: rgba(147, 235, 243, 0.966);
+}
+
+#precioHab {
+  text-decoration: line-through;
+  color: rgba(147, 235, 243, 0.966);
+}
+
+#precioOferta {
+  color: #9b0000;
+  font-size: 4rem;
+}
+
+#finOferta {
+  color: #9b0000;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
