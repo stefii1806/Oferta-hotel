@@ -29,23 +29,23 @@
     var fin; //element that shows the msg about the offer ending
 
     function expiracion(hoy) {
-        var proximaSemana, dia, fecha, mes, ano, dayNames, monthNames;
+        var proximaSemana, dia, fecha, mes, ano, dias, meses;
 
-        //ADD SEVEN DAYS TIME (MILLISECONDS)
+        //SIETE MESES EN MILISEGUNDOS
         proximaSemana = new Date(hoy.getTime() + 7 * 24 * 60 * 60 * 1000);
 
-        //CREATE ARRAYS TO HOLD THE NAMES OF DAYS/MONTHS
+        //ARRAYS DE DÍAS/MESES
         dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
 
         meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
-        //COLLECT THE PARTS OF THE DATE TO SHOW ON THE PAGE
-        day = dias[proximaSemana.getDay()];
+        //FORMAR FECHA 
+        dia= dias[proximaSemana.getDay()];
         fecha = proximaSemana.getDate();
         mes = meses[proximaSemana.getMonth()];
         ano = proximaSemana.getFullYear();
 
-        //CREATE THE MSG
+        //MENSAJE
         vencimiento = 'La oferta termina el próximo ';
         vencimiento += dia + ' ' + fecha + ' de ' + mes + ' de ' + ano + '.';
         return vencimiento;
